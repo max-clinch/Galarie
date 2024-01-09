@@ -56,25 +56,25 @@ describe('ArtToken', () => {
   });
   
 
-//  describe('minting', () => {
-//    it('creates a new token', async () => {
-//      const result = await artToken.mint('#EC058E');
-//      const tokenId = result.value.toString();
-//      const totalSupply = await artToken.totalSupply();
-//      const item = await artToken.items(tokenId);
-//      const owner = await artToken.ownerOf(tokenId);
-//      const approvedAddress = await artToken.getApproved(tokenId);
-//      console.log(approvedAddress);
-//
-//      // Success assertions
-//      expect(tokenId).to.equal(totalSupply.toString(), 'id is correct');
-//      expect(item.uri).to.equal('#EC058E', 'color is correct');
-//      expect(item.creator).to.equal(owner, 'creator is correct');
-//      // expect(approvedAddress).to.equal(market.address, 'approved address is correct');
-//      expect(result.from).to.equal('0x0000000000000000000000000000000000000000', 'from is correct');
-//      expect(result.to).to.equal(accounts[0], 'to is correct');
-//    });
-//  });
+  describe('minting', () => {
+    it('creates a new token', async () => {
+      const result = await artToken.mint('#EC058E');
+      const tokenId = result.value.toString();
+      const totalSupply = await artToken.totalSupply();
+      const item = await artToken.items(tokenId);
+      const owner = await artToken.ownerOf(tokenId);
+      const approvedAddress = await artToken.getApproved(tokenId);
+      console.log(approvedAddress);
+
+      // Success assertions
+      expect(tokenId).to.equal(totalSupply.toString(), 'id is correct');
+      expect(item.uri).to.equal('#EC058E', 'color is correct');
+      expect(item.creator).to.equal(owner, 'creator is correct');
+      // expect(approvedAddress).to.equal(market.address, 'approved address is correct');
+      expect(result.from).to.equal('0x0000000000000000000000000000000000000000', 'from is correct');
+      expect(result.to).to.equal(accounts[0], 'to is correct');
+    });
+  });
 
   describe('indexing', () => {
     it('lists colors', async () => {
