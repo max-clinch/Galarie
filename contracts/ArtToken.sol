@@ -3,49 +3,42 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 
-
-contract ArtToken is ERC721Enumerable{
-  using Counters for Counters.Counter;
-
-  Counters.Counter private _tokenIds;
+contract ArtToken is ERC721Enumerable {
   address public marketplace;
+  uint256 private nextTokenId = 1; // Starting from 1 to ensure non-zero token IDs
 
   struct Item {
-    uint256 id;
     address creator;
-    string uri;//metadata url
+    string uri; //metadata url
   }
 
-  mapping(uint256 => Item) public Items; //id => Item
+  mapping(uint256 => Item) public items; //id => Item
 
-  constructor () ERC721("ArtToken", "ARTK") {}
+  constructor() ERC721("ArtToken", "ARTK") {}
 
-  function mint(string memory uri) public returns (uint256){
-    _tokenIds.increment();
-    uint256 newItemId = _tokenIds.current();
+  function mint(string memory uri) public returns (uint256) {
+    uint256 newItemId = nextTokenId;
     _safeMint(msg.sender, newItemId);
     approve(marketplace, newItemId);
 
-    Items[newItemId] = Item({
-      id: newItemId, 
+    items[newItemId] = Item({
       creator: msg.sender,
       uri: uri
     });
+
+    nextTokenId++;
 
     return newItemId;
   }
 
   function tokenURI(uint256 tokenId) public view override returns (string memory) {
     require(_exists(tokenId), "ERC721URIStorage: URI query for nonexistent token");
-    return Items[tokenId].uri;
+    return items[tokenId].uri;
   }
 
   function setMarketplace(address market) public {
     //require(msg.sender ==);
     marketplace = market;
   }
-
 }
