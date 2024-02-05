@@ -42,3 +42,5 @@ contract ArtToken is ERC721Enumerable {
     marketplace = market;
   }
 }
+// npx hardhat flatten contracts/ArtToken.sol > ArtTokenFlatten.sol
+

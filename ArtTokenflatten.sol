@@ -1,9 +1,10 @@
+// Sources flattened with hardhat v2.19.4 https://hardhat.org
+
 // SPDX-License-Identifier: MIT
-// Sources flattened with hardhat v2.14.1 https://hardhat.org
 
 // File @openzeppelin/contracts/utils/introspection/IERC165.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)
 
 pragma solidity ^0.8.0;
@@ -30,21 +31,12 @@ interface IERC165 {
 }
 
 
-// File @openzeppelin/contracts/interfaces/IERC165.sol@v4.9.0
-
-
-// OpenZeppelin Contracts v4.4.1 (interfaces/IERC165.sol)
-
-pragma solidity ^0.8.0;
-
-
 // File @openzeppelin/contracts/token/ERC721/IERC721.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.9.0) (token/ERC721/IERC721.sol)
 
 pragma solidity ^0.8.0;
-
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
@@ -172,43 +164,12 @@ interface IERC721 is IERC165 {
 }
 
 
-// File @openzeppelin/contracts/interfaces/IERC721.sol@v4.9.0
-
-
-// OpenZeppelin Contracts v4.4.1 (interfaces/IERC721.sol)
-
-pragma solidity ^0.8.0;
-
-
-// File @openzeppelin/contracts/interfaces/IERC4906.sol@v4.9.0
-
-
-// OpenZeppelin Contracts (last updated v4.9.0) (interfaces/IERC4906.sol)
-
-pragma solidity ^0.8.0;
-
-
-/// @title EIP-721 Metadata Update Extension
-interface IERC4906 is IERC165, IERC721 {
-    /// @dev This event emits when the metadata of a token is changed.
-    /// So that the third-party platforms such as NFT market could
-    /// timely update the images and related attributes of the NFT.
-    event MetadataUpdate(uint256 _tokenId);
-
-    /// @dev This event emits when the metadata of a range of tokens is changed.
-    /// So that the third-party platforms such as NFT market could
-    /// timely update the images and related attributes of the NFTs.
-    event BatchMetadataUpdate(uint256 _fromTokenId, uint256 _toTokenId);
-}
-
-
 // File @openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/extensions/IERC721Metadata.sol)
 
 pragma solidity ^0.8.0;
-
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional metadata extension
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -233,7 +194,7 @@ interface IERC721Metadata is IERC721 {
 
 // File @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC721/IERC721Receiver.sol)
 
 pragma solidity ^0.8.0;
@@ -264,7 +225,7 @@ interface IERC721Receiver {
 
 // File @openzeppelin/contracts/utils/Address.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/Address.sol)
 
 pragma solidity ^0.8.1;
@@ -512,7 +473,7 @@ library Address {
 
 // File @openzeppelin/contracts/utils/Context.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
 pragma solidity ^0.8.0;
@@ -540,11 +501,10 @@ abstract contract Context {
 
 // File @openzeppelin/contracts/utils/introspection/ERC165.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)
 
 pragma solidity ^0.8.0;
-
 /**
  * @dev Implementation of the {IERC165} interface.
  *
@@ -571,7 +531,7 @@ abstract contract ERC165 is IERC165 {
 
 // File @openzeppelin/contracts/utils/math/Math.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/math/Math.sol)
 
 pragma solidity ^0.8.0;
@@ -914,7 +874,7 @@ library Math {
 
 // File @openzeppelin/contracts/utils/math/SignedMath.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (utils/math/SignedMath.sol)
 
 pragma solidity ^0.8.0;
@@ -961,12 +921,10 @@ library SignedMath {
 
 // File @openzeppelin/contracts/utils/Strings.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/Strings.sol)
 
 pragma solidity ^0.8.0;
-
-
 /**
  * @dev String operations.
  */
@@ -1048,17 +1006,10 @@ library Strings {
 
 // File @openzeppelin/contracts/token/ERC721/ERC721.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.9.0) (token/ERC721/ERC721.sol)
 
 pragma solidity ^0.8.0;
-
-
-
-
-
-
-
 /**
  * @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard, including
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
@@ -1516,11 +1467,10 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 
 // File @openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC721/extensions/IERC721Enumerable.sol)
 
 pragma solidity ^0.8.0;
-
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional enumeration extension
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -1547,12 +1497,10 @@ interface IERC721Enumerable is IERC721 {
 
 // File @openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol@v4.9.0
 
-
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (token/ERC721/extensions/ERC721Enumerable.sol)
 
 pragma solidity ^0.8.0;
-
-
 /**
  * @dev This implements an optional extension of {ERC721} defined in the EIP that adds
  * enumerability of all the token ids in the contract as well as all token ids owned by each
@@ -1706,172 +1654,46 @@ abstract contract ERC721Enumerable is ERC721, IERC721Enumerable {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol@v4.9.0
-
-
-// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC721/extensions/ERC721URIStorage.sol)
-
-pragma solidity ^0.8.0;
-
-
-/**
- * @dev ERC721 token with storage based token URI management.
- */
-abstract contract ERC721URIStorage is IERC4906, ERC721 {
-    using Strings for uint256;
-
-    // Optional mapping for token URIs
-    mapping(uint256 => string) private _tokenURIs;
-
-    /**
-     * @dev See {IERC165-supportsInterface}
-     */
-    function supportsInterface(bytes4 interfaceId) public view virtual override(ERC721, IERC165) returns (bool) {
-        return interfaceId == bytes4(0x49064906) || super.supportsInterface(interfaceId);
-    }
-
-    /**
-     * @dev See {IERC721Metadata-tokenURI}.
-     */
-    function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
-        _requireMinted(tokenId);
-
-        string memory _tokenURI = _tokenURIs[tokenId];
-        string memory base = _baseURI();
-
-        // If there is no base URI, return the token URI.
-        if (bytes(base).length == 0) {
-            return _tokenURI;
-        }
-        // If both are set, concatenate the baseURI and tokenURI (via abi.encodePacked).
-        if (bytes(_tokenURI).length > 0) {
-            return string(abi.encodePacked(base, _tokenURI));
-        }
-
-        return super.tokenURI(tokenId);
-    }
-
-    /**
-     * @dev Sets `_tokenURI` as the tokenURI of `tokenId`.
-     *
-     * Emits {MetadataUpdate}.
-     *
-     * Requirements:
-     *
-     * - `tokenId` must exist.
-     */
-    function _setTokenURI(uint256 tokenId, string memory _tokenURI) internal virtual {
-        require(_exists(tokenId), "ERC721URIStorage: URI set of nonexistent token");
-        _tokenURIs[tokenId] = _tokenURI;
-
-        emit MetadataUpdate(tokenId);
-    }
-
-    /**
-     * @dev See {ERC721-_burn}. This override additionally checks to see if a
-     * token-specific URI was set for the token, and if so, it deletes the token URI from
-     * the storage mapping.
-     */
-    function _burn(uint256 tokenId) internal virtual override {
-        super._burn(tokenId);
-
-        if (bytes(_tokenURIs[tokenId]).length != 0) {
-            delete _tokenURIs[tokenId];
-        }
-    }
-}
-
-
-// File @openzeppelin/contracts/utils/Counters.sol@v4.9.0
-
-
-// OpenZeppelin Contracts v4.4.1 (utils/Counters.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @title Counters
- * @author Matt Condon (@shrugs)
- * @dev Provides counters that can only be incremented, decremented or reset. This can be used e.g. to track the number
- * of elements in a mapping, issuing ERC721 ids, or counting request ids.
- *
- * Include with `using Counters for Counters.Counter;`
- */
-library Counters {
-    struct Counter {
-        // This variable should never be directly accessed by users of the library: interactions must be restricted to
-        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add
-        // this feature: see https://github.com/ethereum/solidity/issues/4637
-        uint256 _value; // default: 0
-    }
-
-    function current(Counter storage counter) internal view returns (uint256) {
-        return counter._value;
-    }
-
-    function increment(Counter storage counter) internal {
-        unchecked {
-            counter._value += 1;
-        }
-    }
-
-    function decrement(Counter storage counter) internal {
-        uint256 value = counter._value;
-        require(value > 0, "Counter: decrement overflow");
-        unchecked {
-            counter._value = value - 1;
-        }
-    }
-
-    function reset(Counter storage counter) internal {
-        counter._value = 0;
-    }
-}
-
-
 // File contracts/ArtToken.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
-contract ArtToken is ERC721Enumerable{
-  using Counters for Counters.Counter;
-
-  Counters.Counter private _tokenIds;
+contract ArtToken is ERC721Enumerable {
   address public marketplace;
+  uint256 private nextTokenId = 1; // Starting from 1 to ensure non-zero token IDs
 
   struct Item {
-    uint256 id;
     address creator;
-    string uri;//metadata url
+    string uri; //metadata url
   }
 
-  mapping(uint256 => Item) public Items; //id => Item
+  mapping(uint256 => Item) public items; //id => Item
 
-  constructor () ERC721("ArtToken", "ARTK") {}
+  constructor() ERC721("ArtToken", "ARTK") {}
 
-  function mint(string memory uri) public returns (uint256){
-    _tokenIds.increment();
-    uint256 newItemId = _tokenIds.current();
+  function mint(string memory uri) public returns (uint256) {
+    uint256 newItemId = nextTokenId;
     _safeMint(msg.sender, newItemId);
     approve(marketplace, newItemId);
 
-    Items[newItemId] = Item({
-      id: newItemId, 
+    items[newItemId] = Item({
       creator: msg.sender,
       uri: uri
     });
+
+    nextTokenId++;
 
     return newItemId;
   }
 
   function tokenURI(uint256 tokenId) public view override returns (string memory) {
     require(_exists(tokenId), "ERC721URIStorage: URI query for nonexistent token");
-    return Items[tokenId].uri;
+    return items[tokenId].uri;
   }
 
   function setMarketplace(address market) public {
     //require(msg.sender ==);
     marketplace = market;
   }
-
 }
+// npx hardhat flatten contracts/ArtToken.sol > ArtTokenFlatten.sol
